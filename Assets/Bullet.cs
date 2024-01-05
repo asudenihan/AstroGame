@@ -5,15 +5,24 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float life = 3;
+    public int bulletDamage = 1;
 
     void Awake()
     {
         Destroy(gameObject, life);
     }
 
-    void OnCollisionEnter(Collision collision)
+    
+
+
+
+    private void OnCollisionEnter(Collision collision)
     {
-        Destroy(collision.gameObject);
-        Destroy(gameObject);
+        if (collision.gameObject.tag == "npc")
+        {
+
+            collision.gameObject.GetComponent<health>().TakeDamage(bulletDamage);
+            Destroy(gameObject);
+        }
     }
 }

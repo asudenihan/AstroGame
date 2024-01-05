@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
+  bulletDamage: 4
 --- !u!54 &1204150083267441116
 Rigidbody:
   m_ObjectHideFlags: 0
