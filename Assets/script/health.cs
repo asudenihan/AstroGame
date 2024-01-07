@@ -15,7 +15,7 @@ public void TakeDamage (int BulletDamage) {
 
 void Update () {
 
-    if(maxHealth==0) {
+    if(maxHealth <= 0) {
 
         Destroy(gameObject);
 
