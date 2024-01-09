@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class bossbullet : MonoBehaviour
 {
     public float life = 3;
-    public int bulletDamage = 1;
+    public int npbulletDamage = 1;
 
     void Awake()
     {
@@ -14,15 +14,15 @@ public class Bullet : MonoBehaviour
 
 
 
+
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "npc" || collision.gameObject.tag == "boss")
+        if (collision.gameObject.tag == "Player")
         {
 
-            collision.gameObject.GetComponent<health>().TakeDamage(bulletDamage);
+            collision.gameObject.GetComponent<playerhealth>().TakeDamage(npbulletDamage);
             Destroy(gameObject);
         }
-
-
     }
 }
