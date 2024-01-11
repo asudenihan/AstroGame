@@ -11,17 +11,10 @@ public class hpui : MonoBehaviour
 
     void Start()
     {
- 
-
     }
 
     void Update()
     {
-    
-
         hptext.text = Astronaut.GetComponent<playerhealth>().maxHealth.ToString();
-
-
-
     }
 }

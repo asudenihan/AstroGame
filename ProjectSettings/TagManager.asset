@@ -7,6 +7,8 @@ TagManager:
   - plane
   - npc
   - boss
+  - PauseMenu
+  - YouAreDeadMenu
   layers:
   - Default
   - TransparentFX

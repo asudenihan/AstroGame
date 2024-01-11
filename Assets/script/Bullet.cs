@@ -16,13 +16,13 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+
         if (collision.gameObject.tag == "npc" || collision.gameObject.tag == "boss")
         {
 
             collision.gameObject.GetComponent<health>().TakeDamage(bulletDamage);
             Destroy(gameObject);
         }
-
 
     }
 }
