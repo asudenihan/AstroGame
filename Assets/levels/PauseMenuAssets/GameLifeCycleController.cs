@@ -18,7 +18,7 @@ public class GameLifeCycleController : MonoBehaviour
 
     public void ReturnBackToMainMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene("anamen");
         Time.timeScale = 1;
     }
 

@@ -18,6 +18,12 @@ public class bossbullet : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.tag == "bullet")
+        {
+            Destroy(gameObject);
+        }
+
+
         if (collision.gameObject.tag == "Player")
         {
 

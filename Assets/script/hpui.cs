@@ -11,6 +11,7 @@ public class hpui : MonoBehaviour
 
     void Start()
     {
+
     }
 
     void Update()

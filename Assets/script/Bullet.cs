@@ -17,6 +17,12 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
 
+        if (collision.gameObject.tag == "bullet")
+        {
+            Destroy(gameObject);
+        }
+
+
         if (collision.gameObject.tag == "npc" || collision.gameObject.tag == "boss")
         {
 

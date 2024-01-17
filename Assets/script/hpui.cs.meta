@@ -3,7 +3,9 @@ guid: 7688e1c657aa8474392fdebec9ef3dd2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Astronaut: {fileID: 100014, guid: 02dd6406ed1ebc248b2fafd0485e0de9, type: 3}
+  - hptext: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

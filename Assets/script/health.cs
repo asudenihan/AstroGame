@@ -22,9 +22,6 @@ public int maxHealth;
             if(gameObject.tag == "boss")
             {
 
-                Debug.Log("Boss is dead.");
-                Debug.Log("Go to next scene.");
-                Time.timeScale = 0;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
 
